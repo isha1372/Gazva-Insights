@@ -472,6 +472,7 @@ p { margin: 0; }
   margin-top: auto;
 }
 .card__meta .dot { width: 3px; height: 3px; border-radius: 50%; background: var(--line-strong); }
+.is-hidden { display: none !important; }
 
 /* Mosaic grid: lead card spans 2 cols + 2 rows, others smaller */
 .mosaic {
@@ -796,3 +797,4 @@ p { margin: 0; }
   z-index: 200;
 }
 .skip-link:focus { left: 12px; top: 12px; }
+
