@@ -798,3 +798,125 @@ p { margin: 0; }
 }
 .skip-link:focus { left: 12px; top: 12px; }
 
+/* ==========================================================================
+   FOOTER — updated layout (4 columns)
+   ========================================================================== */
+.footer__top {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 56px 24px 40px;
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+/* Brand column */
+.footer__col--brand .footer__brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.footer__logo-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.footer__brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+}
+
+.footer__brand-name {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #fff;
+}
+
+.footer__brand-subline {
+  font-size: 0.72rem;
+  color: #7BA88A;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+/* Follow Us column — links with icons */
+.footer__links--social {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer__links--social a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #D7E6DC;
+  font-size: 0.92rem;
+  transition: color 0.15s var(--ease);
+}
+
+.footer__links--social a:hover {
+  color: #fff;
+}
+
+.footer__follow-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.15s var(--ease);
+}
+
+.footer__links--social a:hover .footer__follow-icon {
+  transform: translateY(-2px);
+}
+
+.footer__follow-icon svg {
+  width: 15px;
+  height: 15px;
+}
+
+.footer__follow-icon--insta {
+  background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  color: #fff;
+}
+
+.footer__follow-icon--fb {
+  background: #1877F2;
+  color: #fff;
+}
+
+.footer__follow-icon--wa {
+  background: #25D366;
+  color: #fff;
+}
+
+@media (max-width: 960px) {
+  .footer__top {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+  .footer__col--brand {
+    grid-column: span 2;   /* brand still spans full width on tablet */
+  }
+}
+
+@media (max-width: 560px) {
+  .footer__top {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .footer__col--brand {
+    grid-column: span 1;
+  }
+}
