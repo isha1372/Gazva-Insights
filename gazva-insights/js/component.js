@@ -92,9 +92,9 @@ const LOGO_SVG = `
       <!-- Col 2: Brand -->
       <div class="footer__col footer__col--brand">
         <div class="footer__brand">
-          <img src="${base}assets/logo.png" alt="Gazva Insights logo" class="footer__logo-img" />
+          <img src="${base}logo 40.png" alt="Gazva Insights logo" class="footer__logo-img" />
           <div class="footer__brand-text">
-            <span class="footer__brand-name">Gazva Insights</span>
+            <span class="footer__brand-name">Gazva Insight</span>
             <span class="footer__brand-subline">Knowledge &amp; Reflection</span>
           </div>
         </div>
