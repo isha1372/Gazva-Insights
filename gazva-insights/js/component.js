@@ -37,7 +37,7 @@
     return document.body.getAttribute("data-base-path") || "";
   }
 
-const LOGO_SVG = `
+const LOGO_HTML = `
   <img
     src="logo 40.png"
     alt="Gazva Insights Logo"
@@ -60,7 +60,7 @@ const LOGO_SVG = `
     header.innerHTML = `
       <nav class="navbar" aria-label="Primary">
         <a href="${base}index.html" class="navbar__brand" aria-label="Gazva Insights home">
-          <span class="navbar__logo">${LOGO_SVG}</span>
+          <span class="navbar__logo">${LOGO_HTML}</span>
           <span class="navbar__name">Gazva <span>Insights</span></span>
         </a>
         <ul class="navbar__links" id="navbarLinks">
@@ -154,6 +154,9 @@ const LOGO_SVG = `
   </a>
 
 </a>
+
+   
+
 
   </div>
 </div>

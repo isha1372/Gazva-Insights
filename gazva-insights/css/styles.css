@@ -1370,3 +1370,22 @@ a.cic-value:hover { color: var(--teal); }
   fill: none;
   stroke: currentColor;
 }
+
+
+
+.contact-info-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-info-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+}
+
+.contact-info-card:hover .cic-icon {
+  transform: scale(1.08);
+}
+
+.cic-icon {
+  transition: transform 0.3s ease;
+}
