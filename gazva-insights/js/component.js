@@ -113,25 +113,50 @@ const LOGO_SVG = `
         </ul>
       </div>
 
-      <!-- Col 4: Follow Us -->
       <div class="footer__col">
-        <h3 class="footer__heading">Follow Us</h3>
-        <ul class="footer__links footer__links--social">
-          <li>
-              <div class="footer__socials">
-            <div class="footer__socials">
-          <a href="https://www.instagram.com/gazvafathimazahra/" class="footer__social-btn" aria-label="Instagram" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.85.07 1.17.06 1.97.24 2.43.41a4.9 4.9 0 0 1 1.77 1.15 4.9 4.9 0 0 1 1.15 1.77c.17.46.35 1.26.41 2.43.06 1.25.07 1.65.07 4.85s0 3.6-.07 4.85c-.06 1.17-.24 1.97-.41 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.46.17-1.26.35-2.43.41-1.25.06-1.65.07-4.85.07s-3.6 0-4.85-.07c-1.17-.06-1.97-.24-2.43-.41a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.17-.46-.35-1.26-.41-2.43C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.85c.06-1.17.24-1.97.41-2.43a4.9 4.9 0 0 1 1.15-1.77A4.9 4.9 0 0 1 5.6 1.8c.46-.17 1.26-.35 2.43-.41C9.28 1.33 9.68 1.32 12 1.32V2.2Zm0 1.8c-3.16 0-3.53 0-4.77.07-1.04.05-1.6.22-1.98.36-.5.2-.86.43-1.23.8-.37.37-.6.73-.8 1.23-.14.38-.31.94-.36 1.98C2.8 9.47 2.8 9.84 2.8 13s0 3.53.07 4.77c.05 1.04.22 1.6.36 1.98.2.5.43.86.8 1.23.37.37.73.6 1.23.8.38.14.94.31 1.98.36 1.24.06 1.61.07 4.77.07s3.53 0 4.77-.07c1.04-.05 1.6-.22 1.98-.36.5-.2.86-.43 1.23-.8.37-.37.6-.73.8-1.23.14-.38.31-.94.36-1.98.06-1.24.07-1.61.07-4.77s0-3.53-.07-4.77c-.05-1.04-.22-1.6-.36-1.98a3.1 3.1 0 0 0-.8-1.23 3.1 3.1 0 0 0-1.23-.8c-.38-.14-.94-.31-1.98-.36C15.53 3.8 15.16 3.8 12 3.8Zm0 4.05a4.95 4.95 0 1 1 0 9.9 4.95 4.95 0 0 1 0-9.9Zm0 1.8a3.15 3.15 0 1 0 0 6.3 3.15 3.15 0 0 0 0-6.3Zm5.4-2.25a1.15 1.15 0 1 1-2.3 0 1.15 1.15 0 0 1 2.3 0Z"/></svg>
-          </a>
-          <a href="https://facebook.com" class="footer__social-btn" aria-label="Facebook" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.16 8.44 9.94v-7.03H7.9v-2.9h2.54V9.84c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.9h-2.34V22c4.78-.78 8.44-4.94 8.44-9.94Z"/></svg>
-          </a>
-          <a href="https://wa.me/919000000000" class="footer__social-btn" aria-label="WhatsApp" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1-.2.2-.3.2-.6.1-.9-.4-1.8-1-2.6-1.9-.7-.8-1.2-1.6-1.5-2.2-.1-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.2-.5 0-.2 0-.4-.1-.5-.1-.2-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 .9-1 2.3s1 2.7 1.1 2.9c.1.2 1.7 2.7 4.3 3.7 2.5 1 2.5.7 3 .6.4-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1-.1-.1-.2-.2-.5-.3Zm-5.5 6.9h-.1a8.9 8.9 0 0 1-4.5-1.2l-.3-.2-3.3.9.9-3.2-.2-.3a8.9 8.9 0 0 1-1.3-4.7c0-4.9 4-8.9 9-8.9 2.4 0 4.6.9 6.3 2.6a8.8 8.8 0 0 1 2.6 6.3c0 5-4 8.9-9.1 8.9Zm7.7-16.6A10.6 10.6 0 0 0 12 1.6c-5.9 0-10.7 4.7-10.7 10.6 0 1.9.5 3.7 1.4 5.2L1.6 22.4l5.2-1.4c1.5.8 3.2 1.3 5 1.3h.1c5.9 0 10.7-4.7 10.7-10.6 0-2.8-1.1-5.5-3.1-7.5Z"/></svg>
-          </a>
-        </div>
-        </div>
-      </div>
+  <h3 class="footer__heading">Follow Us</h3>
+
+  <div class="footer__socials">
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/gazvafathimazahra/"
+   class="footer__social-btn"
+   aria-label="Instagram"
+   target="_blank"
+   rel="noopener">
+
+  <svg width="16" height="16"
+       viewBox="0 0 24 24"
+       fill="none"
+       stroke="currentColor"
+       stroke-width="1.8"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       aria-hidden="true">
+
+    <rect x="2" y="2" width="20" height="20" rx="5"/>
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+
+  </svg>
+
+</a>
+
+   <a href="https://facebook.com"
+   class="footer__social-btn"
+   aria-label="Facebook"
+   target="_blank"
+   rel="noopener">
+
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+    </svg>
+  </a>
+
+</a>
+
+  </div>
+</div>
 
     </div>
 

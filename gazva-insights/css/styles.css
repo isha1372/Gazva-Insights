@@ -1342,3 +1342,31 @@ a.cic-value:hover { color: var(--teal); }
   .contact-form-wrap { padding: 22px 18px; }
   .contact-social-btn span { display: none; }
 }
+
+.footer__socials {
+  display: flex;
+  gap: 12px;
+}
+
+.footer__social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.08);
+  color: #fff;
+  transition: .25s ease;
+}
+
+.footer__social-btn:hover {
+  transform: translateY(-3px);
+}
+
+.footer__social-btn svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+}
