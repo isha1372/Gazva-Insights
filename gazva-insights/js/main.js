@@ -162,3 +162,42 @@ function initShareButtons() {
     btn.href = `https://twitter.com/intent/tweet?url=${url}&text=${title}`;
   });
 }
+
+function resetContactForm() {
+  document.getElementById("formContent").style.display = "block";
+  document.getElementById("formSuccess").classList.remove("is-visible");
+  document.getElementById("contactForm").reset();
+}
+
+document.getElementById("contactForm")?.addEventListener("submit", async function (e) {
+  e.preventDefault();
+  const btn = document.getElementById("submitBtn");
+  btn.disabled = true;
+  btn.textContent = "Sending…";
+
+  const data = new FormData(this);
+
+  try {
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify({
+        access_key: "e42fb4ab-a451-4953-b6ed-7b6fcc81f819",
+        subject: "New Contact Form Submission — Gazva Insights",
+        ...Object.fromEntries(data)
+      })
+    });
+    const result = await res.json();
+    if (result.success) {
+      document.getElementById("formContent").style.display = "none";
+      document.getElementById("formSuccess").classList.add("is-visible");
+    } else {
+      alert("Something went wrong. Please try again.");
+    }
+  } catch {
+    alert("Network error. Please try again.");
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = 'Send Message <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>';
+  }
+});
