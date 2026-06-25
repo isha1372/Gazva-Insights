@@ -60,7 +60,15 @@ const LOGO_HTML = `
     header.innerHTML = `
       <nav class="navbar" aria-label="Primary">
         <a href="${base}index.html" class="navbar__brand" aria-label="Gazva Insights home">
-          <span class="navbar__logo">${LOGO_HTML}</span>
+           <span class="navbar__logo">
+          <img
+            src="${base}logo 40.png"
+            alt="Gazva Insights Logo"
+            width="40"
+            height="40"
+            style="border-radius:10px; object-fit:cover;"
+          />
+        </span>
           <span class="navbar__name">Gazva <span>Insights</span></span>
         </a>
         <ul class="navbar__links" id="navbarLinks">
@@ -142,7 +150,7 @@ const LOGO_HTML = `
 
 </a>
 
-   <a href="https://facebook.com"
+   <a href="https://www.facebook.com/people/Fathima-Zahra-Islamic-Womens-College-Chemmad-Students-Union-GAZVA/"
    class="footer__social-btn"
    aria-label="Facebook"
    target="_blank"
